@@ -18,6 +18,7 @@
     <sprites name="Testing">
       <sprite>sprites\spr_lvl0</sprite>
       <sprite>sprites\spr_lvl6</sprite>
+      <sprite>sprites\spr_lvl10</sprite>
     </sprites>
     <sprites name="lvl0 - #staywiththeherd">
       <sprite>sprites\spr_block</sprite>
@@ -30,6 +31,12 @@
       <sprite>sprites\spr_sun</sprite>
       <sprite>sprites\spr_rain</sprite>
       <sprite>sprites\spr_sunrain_spawn</sprite>
+    </sprites>
+    <sprites name="lvl10 - carloslecture">
+      <sprite>sprites\spr_carlos</sprite>
+      <sprite>sprites\spr_lecturematerial</sprite>
+      <sprite>sprites\spr_anecdote</sprite>
+      <sprite>sprites\spr_carlos_lecture_control</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -46,6 +53,11 @@
     <object>objects\obj_high_scores</object>
     <object>objects\obj_exit</object>
     <object>objects\obj_quote_box</object>
+    <objects name="Testing">
+      <object>objects\obj_testlvl0</object>
+      <object>objects\obj_testlvl6</object>
+      <object>objects\obj_testlvl10</object>
+    </objects>
     <objects name="lvl0 - #staywiththeherd">
       <object>objects\obj_block</object>
       <object>objects\obj_player</object>
@@ -53,14 +65,16 @@
       <object>objects\obj_goal</object>
       <object>objects\obj_herd</object>
     </objects>
-    <objects name="Testing">
-      <object>objects\obj_testlvl0</object>
-      <object>objects\obj_testlvl6</object>
-    </objects>
     <objects name="lvl6 - classphotodate">
       <object>objects\obj_sun</object>
       <object>objects\obj_rain</object>
       <object>objects\obj_sunrain_spawn</object>
+    </objects>
+    <objects name="lvl10 - carloslecture">
+      <object>objects\obj_carlos</object>
+      <object>objects\obj_carlos_lecture_cntrl</object>
+      <object>objects\obj_anecdote</object>
+      <object>objects\obj_lecturematerial</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -69,6 +83,7 @@
     <room>rooms\rom_lvl_1</room>
     <room>rooms\rom_lvl_2</room>
     <room>rooms\rom_lvl_6</room>
+    <room>rooms\rom_lvl_10</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
