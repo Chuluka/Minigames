@@ -10,10 +10,15 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_lives</sprite>
     <sprite>sprites\spr_play_game</sprite>
     <sprite>sprites\spr_high_scores</sprite>
     <sprite>sprites\spr_exit</sprite>
     <sprite>sprites\spr_gda2015</sprite>
+    <sprites name="Testing">
+      <sprite>sprites\spr_lvl0</sprite>
+      <sprite>sprites\spr_lvl6</sprite>
+    </sprites>
     <sprites name="lvl0 - #staywiththeherd">
       <sprite>sprites\spr_block</sprite>
       <sprite>sprites\spr_player</sprite>
@@ -21,16 +26,18 @@
       <sprite>sprites\spr_ifrs</sprite>
       <sprite>sprites\spr_goal</sprite>
     </sprites>
-    <sprites name="Testing">
-      <sprite>sprites\spr_lvl0</sprite>
+    <sprites name="lvl6 - classphotodate">
+      <sprite>sprites\spr_sun</sprite>
+      <sprite>sprites\spr_rain</sprite>
+      <sprite>sprites\spr_sunrain_spawn</sprite>
     </sprites>
-    <sprite>sprites\spr_lives</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\fnt_quotes</font>
     <font>fonts\fnt_menu_buttons</font>
+    <font>fonts\fnt_labels</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_gui</object>
@@ -48,6 +55,12 @@
     </objects>
     <objects name="Testing">
       <object>objects\obj_testlvl0</object>
+      <object>objects\obj_testlvl6</object>
+    </objects>
+    <objects name="lvl6 - classphotodate">
+      <object>objects\obj_sun</object>
+      <object>objects\obj_rain</object>
+      <object>objects\obj_sunrain_spawn</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -55,6 +68,7 @@
     <room>rooms\rom_lvl_0</room>
     <room>rooms\rom_lvl_1</room>
     <room>rooms\rom_lvl_2</room>
+    <room>rooms\rom_lvl_6</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

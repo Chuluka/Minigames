@@ -29,6 +29,10 @@
 globalvar quote_chosen;
 quote_chosen = 0;
 randomize();
+globalvar time;
+time = 0;
+globalvar playerlives;
+playerlives = 3;
 }
 
 </string>
