@@ -11,13 +11,10 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_lives</sprite>
-    <sprite>sprites\spr_play_game</sprite>
-    <sprite>sprites\spr_high_scores</sprite>
-    <sprite>sprites\spr_exit</sprite>
+    <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_gda2015</sprite>
     <sprites name="Testing">
-      <sprite>sprites\spr_lvl0</sprite>
-      <sprite>sprites\spr_lvl6</sprite>
+      <sprite>sprites\spr_lvl</sprite>
     </sprites>
     <sprites name="lvl0 - #staywiththeherd">
       <sprite>sprites\spr_block</sprite>
@@ -31,6 +28,10 @@
       <sprite>sprites\spr_rain</sprite>
       <sprite>sprites\spr_sunrain_spawn</sprite>
     </sprites>
+    <sprites name="lvl3 - rhodesmustfall">
+      <sprite>sprites\spr_statue</sprite>
+      <sprite>sprites\spr_base</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -40,12 +41,16 @@
     <font>fonts\fnt_labels</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_gui</object>
-    <object>objects\obj_roomskip</object>
-    <object>objects\obj_play_game</object>
-    <object>objects\obj_high_scores</object>
-    <object>objects\obj_exit</object>
-    <object>objects\obj_quote_box</object>
+    <objects name="Menu">
+      <object>objects\par_button</object>
+      <object>objects\obj_play_game</object>
+      <object>objects\obj_high_scores</object>
+      <object>objects\obj_exit</object>
+      <objects name="Testing">
+        <object>objects\obj_testingcntrl</object>
+        <object>objects\obj_testing</object>
+      </objects>
+    </objects>
     <objects name="lvl0 - #staywiththeherd">
       <object>objects\obj_block</object>
       <object>objects\obj_player</object>
@@ -53,21 +58,25 @@
       <object>objects\obj_goal</object>
       <object>objects\obj_herd</object>
     </objects>
-    <objects name="Testing">
-      <object>objects\obj_testlvl0</object>
-      <object>objects\obj_testlvl6</object>
+    <objects name="lvl3 - rhodesmustfall">
+      <object>objects\obj_base</object>
+      <object>objects\obj_statue</object>
     </objects>
     <objects name="lvl6 - classphotodate">
       <object>objects\obj_sun</object>
       <object>objects\obj_rain</object>
       <object>objects\obj_sunrain_spawn</object>
     </objects>
+    <object>objects\obj_gui</object>
+    <object>objects\obj_roomskip</object>
+    <object>objects\obj_quote_box</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rom_main_menu</room>
     <room>rooms\rom_lvl_0</room>
     <room>rooms\rom_lvl_1</room>
     <room>rooms\rom_lvl_2</room>
+    <room>rooms\rom_lvl_3</room>
     <room>rooms\rom_lvl_6</room>
   </rooms>
   <help>

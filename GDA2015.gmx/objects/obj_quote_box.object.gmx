@@ -25,15 +25,53 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>{
-globalvar quote_chosen;
-quote_chosen = 0;
+            <string>///Make list of quotes
+
+quotes[0] = "If I had a Dollar for every girl that found me unattractive, they would eventually find me attractive - Justin Poovan"
+quotes[1] = "The right one is out there for everybody. Statistically, you'll probably never find them, or mess it up when you do, but they're out there! - Shandu Nefolovhodwe"
+quotes[2] = "Mara this studying! I have a photographic memory but I'm just out of film! - Michael Nicolau"
+quotes[3] = "PGDA can't be that hard. I mean, it's only a diploma! - Vicky Aadnesgaard"
+quotes[4] = "Only an accountant could catch Al Capone - Kgomotso Malele"
+quotes[5] = "I read about the dangers of substance abuse. So I gave up reading. - Catherine Nichas"
+quotes[6] = "Kiss an accountant, it's tax deductible - Tinei Chagonda"
+quotes[7] = "Dogs have masters. Cats have staff - Nikita Sokopo"
+quotes[8] = "I'm a UCT graduate. So does that mean I can tell people I graduated from the Harvard of Africa - Grant Walker"
+quotes[9] = "You miss 100% of the shots you don't take - Munashe Gomwe"
+quotes[10] = "Being a dentist is the easiest profession in the world. All you have to say is ''What seems to be the problem? Oh look, it's your teeth'' - Josh Cesman"
+quotes[11] = "You are not paid for the hour. You are paid for the value you bring to the hour - Karlin Moodley, Founder of Twitter"
+quotes[12] = "Here's how I think of money. Soldiers. I send them out to war every day. I want them to take prisoners and to come home, so that there's more of them - Muhammed Suleman"
+quotes[13] = "I Shirley Ward be keen on having a few drinks with the class on Thursday after one of the worst exam weeks imaginable - Oren Katzeff"
+quotes[14] = "T.E.A.M. Together Everyone Achieves More - Josh Cesman"
+quotes[15] = "Hard work never killed anybody, but why take the chance? - Unknown"
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Choose a random quote and set other vars
 randomize();
+quote_chosen = irandom(array_length_1d(quotes));
+
 globalvar time;
 time = 0;
 globalvar playerlives;
 playerlives = 3;
-}
+
 
 </string>
           </argument>
@@ -77,162 +115,17 @@ playerlives = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>{
+            <string>///Draw box and random quote
+
+draw_set_color(c_black);
 draw_rectangle(256,920,1664,1048,false);
 
-//Drawing all the quotes
-if  (quote_chosen == 0)
-{
-    globalvar chance;
-    chance = irandom(16);
-    quote_chosen = 1;
-}
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_font(fnt_quotes);
+draw_text_ext_transformed_colour(920, 984,quotes[quote_chosen],40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
+    
 
-if (chance == 0)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"If I had a Dollar for every girl that found me unattractive, they would eventually find me attractive - Justin Poovan",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-
-else if (chance == 1)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"The right one is out there for everybody. Statistically, you'll probably never find them, or mess it up when you do, but they're out there! - Shandu Nefolovhodwe",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 2)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"Mara this studying! I have a photographic memory but I'm just out of film! - Michael Nicolau",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 3)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"PGDA can't be that hard. I mean, it's only a diploma! - Vicky Aadnesgaard",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 4)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"Only an accountant could catch Al Capone - Kgomotso Malele",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 5)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"I read about the dangers of substance abuse. So I gave up reading. - Catherine Nichas",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 6)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"Kiss an accountant, it's tax deductible - Tinei Chagonda",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 7)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"Dogs have masters. Cats have staff - Nikita Sokopo",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 8)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"I'm a UCT graduate. So does that mean I can tell people I graduated from the Harvard of Africa - Grant Walker",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 9)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"You miss 100% of the shots you don't take - Munashe Gomwe",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 10)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"Being a dentist is the easiest profession in the world. All you have to say is ''What seems to be the problem? Oh look, it's your teeth'' - Josh Cesman",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 11)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"You are not paid for the hour. You are paid for the value you bring to the hour - Karlin Moodley, Founder of Twitter",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 12)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"Here's how I think of money. Soldiers. I send them out to war every day. I want them to take prisoners and to come home, so that there's more of them - Muhammed Suleman",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 13)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"I Shirley Ward be keen on having a few drinks with the class on Thursday after one of the worst exam weeks imaginable - Oren Katzeff",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 14)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"T.E.A.M. Together Everyone Achieves More - Josh Cesman",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-else if (chance == 15)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"Hard work never killed anybody, but why take the chance? - Unknown",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-
-else if (chance == 16)
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"Hard work never killed anybody, but why take the chance? - Unknown",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-
-else
-    {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(fnt_quotes);
-    draw_text_ext_transformed_colour(920, 984,"There is a bug in this code, noob.",40,1208,1,1,0,c_white,c_white,c_white,c_white,1);
-    }
-    
-}
 </string>
           </argument>
         </arguments>
