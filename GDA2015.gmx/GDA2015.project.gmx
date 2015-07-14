@@ -19,6 +19,7 @@
       <sprite>sprites\spr_lvl0</sprite>
       <sprite>sprites\spr_lvl6</sprite>
       <sprite>sprites\spr_lvl10</sprite>
+      <sprite>sprites\spr_lvl14</sprite>
     </sprites>
     <sprites name="lvl0 - #staywiththeherd">
       <sprite>sprites\spr_block</sprite>
@@ -38,6 +39,11 @@
       <sprite>sprites\spr_anecdote</sprite>
       <sprite>sprites\spr_carlos_lecture_control</sprite>
     </sprites>
+    <sprites name="lvl14 - avoiddpr">
+      <sprite>sprites\spr_unsignedbox</sprite>
+      <sprite>sprites\spr_playersigned</sprite>
+      <sprite>sprites\spr_signedbox</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -45,6 +51,7 @@
     <font>fonts\fnt_quotes</font>
     <font>fonts\fnt_menu_buttons</font>
     <font>fonts\fnt_labels</font>
+    <font>fonts\fnt_signed</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_gui</object>
@@ -57,6 +64,7 @@
       <object>objects\obj_testlvl0</object>
       <object>objects\obj_testlvl6</object>
       <object>objects\obj_testlvl10</object>
+      <object>objects\obj_testlvl14</object>
     </objects>
     <objects name="lvl0 - #staywiththeherd">
       <object>objects\obj_block</object>
@@ -76,6 +84,12 @@
       <object>objects\obj_anecdote</object>
       <object>objects\obj_lecturematerial</object>
     </objects>
+    <objects name="lvl14 - avoiddpr">
+      <object>objects\obj_signbox</object>
+      <object>objects\obj_otherpeoplebox</object>
+      <object>objects\obj_playersigned</object>
+      <object>objects\obj_avoiddpr_control</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rom_main_menu</room>
@@ -84,6 +98,7 @@
     <room>rooms\rom_lvl_2</room>
     <room>rooms\rom_lvl_6</room>
     <room>rooms\rom_lvl_10</room>
+    <room>rooms\rom_lvl_14</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
