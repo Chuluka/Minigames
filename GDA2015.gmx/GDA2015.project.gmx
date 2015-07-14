@@ -31,6 +31,11 @@
     <sprites name="lvl3 - rhodesmustfall">
       <sprite>sprites\spr_statue</sprite>
       <sprite>sprites\spr_base</sprite>
+    <sprites name="lvl10 - carloslecture">
+      <sprite>sprites\spr_carlos</sprite>
+      <sprite>sprites\spr_lecturematerial</sprite>
+      <sprite>sprites\spr_anecdote</sprite>
+      <sprite>sprites\spr_carlos_lecture_control</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -70,6 +75,12 @@
     <object>objects\obj_gui</object>
     <object>objects\obj_roomskip</object>
     <object>objects\obj_quote_box</object>
+    <objects name="lvl10 - carloslecture">
+      <object>objects\obj_carlos</object>
+      <object>objects\obj_carlos_lecture_cntrl</object>
+      <object>objects\obj_anecdote</object>
+      <object>objects\obj_lecturematerial</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rom_main_menu</room>
@@ -78,6 +89,7 @@
     <room>rooms\rom_lvl_2</room>
     <room>rooms\rom_lvl_3</room>
     <room>rooms\rom_lvl_6</room>
+    <room>rooms\rom_lvl_10</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

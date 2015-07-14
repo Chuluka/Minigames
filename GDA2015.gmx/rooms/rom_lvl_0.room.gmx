@@ -168,7 +168,7 @@
     <instance objName="obj_herd" x="750" y="524" name="inst_04C86093" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_herd" x="739" y="506" name="inst_5DCF7BF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_herd" x="820" y="528" name="inst_068438B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_gui" x="0" y="0" name="inst_685EED42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gui" x="0" y="312" name="inst_8A33D462" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
