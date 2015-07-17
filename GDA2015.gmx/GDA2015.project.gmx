@@ -8,6 +8,7 @@
     <sounds name="lvl0 - #staywiththeherd">
       <sound>sound\snd_theherd</sound>
     </sounds>
+    <sound>sound\snd_theme</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_lives</sprite>
