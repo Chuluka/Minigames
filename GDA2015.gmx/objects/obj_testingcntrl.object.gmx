@@ -29,10 +29,10 @@
 
 var xs, ys, i;
 
-xs = 260
+xs = 64
 ys = 80
 
-for (i = 0; i &lt; 10; i++)
+for (i = 0; i &lt;= c_levelcount; i++)
 {
     with(instance_create(xs+(sprite_get_width(spr_lvl)*i), ys, obj_testing))
     {

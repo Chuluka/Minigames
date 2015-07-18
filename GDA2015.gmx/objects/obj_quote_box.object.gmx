@@ -65,7 +65,7 @@ quotes[15] = "Hard work never killed anybody, but why take the chance? - Unknown
             <kind>1</kind>
             <string>///Choose a random quote and set other vars
 randomize();
-quote_chosen = irandom(array_length_1d(quotes));
+quote_chosen = irandom(array_length_1d(quotes)-1);
 
 globalvar time;
 time = 0;
