@@ -63,36 +63,28 @@ if time == 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>{
+            <string>///Draw timer, score and lives
+
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_font(fnt_labels);
+
 //Drawing the timer
 draw_text_ext_transformed_colour(960, 48,string(time)+"s",40,256,1,1,0,c_white,c_white,c_white,c_white,1);
+
 //Drawing the score
 draw_text_ext_transformed_colour(1664, 48,"Score "+string(score),40,256,1,1,0,c_white,c_white,c_white,c_white,1);
+
 //Drawing the lives
-    {
-    if playerlives == 3
-        {
-        draw_sprite(spr_lives,0,16,16);
-        draw_sprite(spr_lives,0,88,16);
-        draw_sprite(spr_lives,0,160,16);
-        }
-    else if playerlives == 2
-        {
-        draw_sprite(spr_lives,0,16,16);
-        draw_sprite(spr_lives,0,88,16);
-        }
-    else if playerlives == 1
-        {
-        draw_sprite(spr_lives,0,16,16);
-        }    
-    else if playerlives &lt; 1
-        {
-        exit
-        }
-    }   
+var dx, dy;
+
+dx = 16
+dy = 16
+
+for (i = 0; i &lt; playerlives; i++)
+{
+    draw_sprite(spr_lives, 0, dx, dy);
+    dx += sprite_get_width(spr_lives);
 }
 </string>
           </argument>

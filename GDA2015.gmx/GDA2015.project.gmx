@@ -12,15 +12,14 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_lives</sprite>
-    <sprite>sprites\spr_play_game</sprite>
-    <sprite>sprites\spr_high_scores</sprite>
-    <sprite>sprites\spr_exit</sprite>
+    <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_gda2015</sprite>
     <sprites name="Testing">
       <sprite>sprites\spr_lvl0</sprite>
       <sprite>sprites\spr_lvl6</sprite>
       <sprite>sprites\spr_lvl10</sprite>
       <sprite>sprites\spr_lvl14</sprite>
+      <sprite>sprites\spr_lvl</sprite>
     </sprites>
     <sprites name="lvl0 - #staywiththeherd">
       <sprite>sprites\spr_block</sprite>
@@ -33,6 +32,10 @@
       <sprite>sprites\spr_sun</sprite>
       <sprite>sprites\spr_rain</sprite>
       <sprite>sprites\spr_sunrain_spawn</sprite>
+    </sprites>
+    <sprites name="lvl3 - rhodesmustfall">
+      <sprite>sprites\spr_statue</sprite>
+      <sprite>sprites\spr_base</sprite>
     </sprites>
     <sprites name="lvl10 - carloslecture">
       <sprite>sprites\spr_carlos</sprite>
@@ -48,6 +51,10 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\spawn_thoughtbubble.gml</script>
+    <script>scripts\startup.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_quotes</font>
     <font>fonts\fnt_menu_buttons</font>
@@ -57,11 +64,16 @@
   <objects name="objects">
     <object>objects\obj_gui</object>
     <object>objects\obj_roomskip</object>
-    <object>objects\obj_play_game</object>
-    <object>objects\obj_high_scores</object>
-    <object>objects\obj_exit</object>
     <object>objects\obj_quote_box</object>
+    <objects name="Menu">
+      <object>objects\par_button</object>
+      <object>objects\obj_play_game</object>
+      <object>objects\obj_high_scores</object>
+      <object>objects\obj_exit</object>
+    </objects>
     <objects name="Testing">
+      <object>objects\obj_testingcntrl</object>
+      <object>objects\obj_testing</object>
       <object>objects\obj_testlvl0</object>
       <object>objects\obj_testlvl6</object>
       <object>objects\obj_testlvl10</object>
@@ -74,6 +86,10 @@
       <object>objects\obj_goal</object>
       <object>objects\obj_herd</object>
     </objects>
+    <objects name="lvl3 - rhodesmustfall">
+      <object>objects\obj_base</object>
+      <object>objects\obj_statue</object>
+    </objects>
     <objects name="lvl6 - classphotodate">
       <object>objects\obj_sun</object>
       <object>objects\obj_rain</object>
@@ -82,6 +98,7 @@
     <objects name="lvl10 - carloslecture">
       <object>objects\obj_carlos</object>
       <object>objects\obj_carlos_lecture_cntrl</object>
+      <object>objects\par_thoughtbubble</object>
       <object>objects\obj_anecdote</object>
       <object>objects\obj_lecturematerial</object>
     </objects>
@@ -97,10 +114,17 @@
     <room>rooms\rom_lvl_0</room>
     <room>rooms\rom_lvl_1</room>
     <room>rooms\rom_lvl_2</room>
+    <room>rooms\rom_lvl_3</room>
     <room>rooms\rom_lvl_6</room>
     <room>rooms\rom_lvl_10</room>
     <room>rooms\rom_lvl_14</room>
   </rooms>
+  <constants number="4">
+    <constant name="c_levelcount">14</constant>
+    <constant name="c_lecture">0</constant>
+    <constant name="c_anecdote">1</constant>
+    <constant name="c_random">2</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
