@@ -83,6 +83,18 @@ alarm[0]=room_speed;
 alarm[1]=room_speed;
 globalvar lecturetime;
 lecturetime = 2;
+
+//Nodes
+globalvar node_1;
+node_1 = 0;
+globalvar node_2;
+node_2 = 0;
+globalvar node_3;
+node_3 = 0;
+globalvar node_4;
+node_4 = 0;
+globalvar node_5;
+node_5 = 0;
 }
 </string>
           </argument>

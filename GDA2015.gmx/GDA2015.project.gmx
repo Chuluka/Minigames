@@ -23,8 +23,7 @@
     </sprites>
     <sprites name="lvl4 - passcesmanloveletter">
       <sprite>sprites\spr_desk</sprite>
-      <sprite>sprites\spr_node_deactivated</sprite>
-      <sprite>sprites\spr_node_activated</sprite>
+      <sprite>sprites\spr_node</sprite>
       <sprite>sprites\spr_target</sprite>
       <sprite>sprites\spr_cesman</sprite>
       <sprite>sprites\spr_lecturer</sprite>
@@ -99,7 +98,11 @@
       <object>objects\obj_statue</object>
     </objects>
     <objects name="lvl4 - passcesmanloveletter">
-      <object>objects\obj_node</object>
+      <object>objects\obj_node_1</object>
+      <object>objects\obj_node_2</object>
+      <object>objects\obj_node_3</object>
+      <object>objects\obj_node_4</object>
+      <object>objects\obj_node_5</object>
       <object>objects\obj_lecturer</object>
       <object>objects\obj_desk</object>
       <object>objects\obj_cesman</object>
