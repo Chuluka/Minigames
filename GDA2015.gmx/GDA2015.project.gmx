@@ -103,6 +103,11 @@
       <object>objects\obj_node_3</object>
       <object>objects\obj_node_4</object>
       <object>objects\obj_node_5</object>
+      <object>objects\obj_node_6</object>
+      <object>objects\obj_node_7</object>
+      <object>objects\obj_node_8</object>
+      <object>objects\obj_node_9</object>
+      <object>objects\obj_node_10</object>
       <object>objects\obj_lecturer</object>
       <object>objects\obj_desk</object>
       <object>objects\obj_cesman</object>
