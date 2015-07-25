@@ -55,7 +55,7 @@
             <kind>1</kind>
             <string>///Set timer
 
-time = 10;
+time = 30;
 alarm[0]=room_speed;
 
 </string>
@@ -105,6 +105,66 @@ globalvar node_9;
 node_9 = 0;
 globalvar node_10;
 node_10 = 0;
+globalvar node_11;
+node_11 = 0;
+globalvar node_12;
+node_12 = 0;
+globalvar node_13;
+node_13 = 0;
+globalvar node_14;
+node_14 = 0;
+globalvar node_15;
+node_15 = 0;
+globalvar node_16;
+node_16 = 0;
+globalvar node_17;
+node_17 = 0;
+globalvar node_18;
+node_18 = 0;
+globalvar node_19;
+node_19 = 0;
+globalvar node_20;
+node_20 = 0;
+globalvar node_21;
+node_21 = 0;
+globalvar node_22;
+node_22 = 0;
+globalvar node_23;
+node_23 = 0;
+globalvar node_24;
+node_24 = 0;
+globalvar node_25;
+node_25 = 0;
+globalvar node_26;
+node_26 = 0;
+globalvar node_27;
+node_27 = 0;
+globalvar node_28;
+node_28 = 0;
+globalvar node_29;
+node_29 = 0;
+globalvar node_30;
+node_30 = 0;
+globalvar node_31;
+node_31 = 0;
+globalvar node_32;
+node_32 = 0;
+globalvar node_33;
+node_33 = 0;
+globalvar node_34;
+node_34 = 0;
+globalvar node_35;
+node_35 = 0;
+globalvar node_36;
+node_36 = 0;
+globalvar node_37;
+node_37 = 0;
+globalvar node_38;
+node_38 = 0;
+globalvar node_39;
+node_39 = 0;
+globalvar node_40;
+node_40 = 0;
 }
 </string>
           </argument>

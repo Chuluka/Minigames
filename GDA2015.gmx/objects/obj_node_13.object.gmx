@@ -55,7 +55,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>node_5</string>
+            <string>node_13</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -153,7 +153,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>node_5</string>
+            <string>node_13</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -311,13 +311,13 @@
             <kind>1</kind>
             <string>///Node Activated
 {
-if node_5 == 0 and node_4 == 1
+if node_13 == 0 and node_12 == 1
     {
     node_1 = 0;
     node_2 = 0;
     node_3 = 0;
     node_4 = 0;
-    node_5 = 1;    
+    node_5 = 0;    
     node_6 = 0;
     node_7 = 0;
     node_8 = 0;
@@ -325,7 +325,7 @@ if node_5 == 0 and node_4 == 1
     node_10 = 0;  
     node_11 = 0;
     node_12 = 0;
-    node_13 = 0;
+    node_13 = 1;
     node_14 = 0;
     node_15 = 0;    
     node_16 = 0;
@@ -375,15 +375,15 @@ if node_5 == 0 and node_4 == 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Node Activated
+            <string>///Backward
 {
-if node_5 == 0 and node_6 == 1
+if node_13 == 0 and node_14 == 1
     {
     node_1 = 0;
     node_2 = 0;
     node_3 = 0;
     node_4 = 0;
-    node_5 = 1;    
+    node_5 = 0;    
     node_6 = 0;
     node_7 = 0;
     node_8 = 0;
@@ -391,7 +391,7 @@ if node_5 == 0 and node_6 == 1
     node_10 = 0;  
     node_11 = 0;
     node_12 = 0;
-    node_13 = 0;
+    node_13 = 1;
     node_14 = 0;
     node_15 = 0;    
     node_16 = 0;

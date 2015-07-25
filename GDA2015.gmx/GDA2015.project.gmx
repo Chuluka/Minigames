@@ -55,6 +55,7 @@
       <sprite>sprites\spr_playersigned</sprite>
       <sprite>sprites\spr_signedbox</sprite>
     </sprites>
+    <sprite>sprites\spr_quotebox</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -108,6 +109,26 @@
       <object>objects\obj_node_8</object>
       <object>objects\obj_node_9</object>
       <object>objects\obj_node_10</object>
+      <object>objects\obj_node_11</object>
+      <object>objects\obj_node_12</object>
+      <object>objects\obj_node_13</object>
+      <object>objects\obj_node_14</object>
+      <object>objects\obj_node_15</object>
+      <object>objects\obj_node_16</object>
+      <object>objects\obj_node_17</object>
+      <object>objects\obj_node_18</object>
+      <object>objects\obj_node_19</object>
+      <object>objects\obj_node_20</object>
+      <object>objects\obj_node_21</object>
+      <object>objects\obj_node_22</object>
+      <object>objects\obj_node_23</object>
+      <object>objects\obj_node_24</object>
+      <object>objects\obj_node_25</object>
+      <object>objects\obj_node_26</object>
+      <object>objects\obj_node_27</object>
+      <object>objects\obj_node_28</object>
+      <object>objects\obj_node_29</object>
+      <object>objects\obj_node_30</object>
       <object>objects\obj_lecturer</object>
       <object>objects\obj_desk</object>
       <object>objects\obj_cesman</object>
