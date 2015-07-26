@@ -21,6 +21,13 @@
       <sprite>sprites\spr_lvl14</sprite>
       <sprite>sprites\spr_lvl</sprite>
     </sprites>
+    <sprites name="lvl4 - passcesmanloveletter">
+      <sprite>sprites\spr_desk</sprite>
+      <sprite>sprites\spr_node</sprite>
+      <sprite>sprites\spr_target</sprite>
+      <sprite>sprites\spr_cesman</sprite>
+      <sprite>sprites\spr_lecturer</sprite>
+    </sprites>
     <sprites name="lvl0 - #staywiththeherd">
       <sprite>sprites\spr_block</sprite>
       <sprite>sprites\spr_player</sprite>
@@ -56,6 +63,7 @@
       <sprite>sprites\spr_drop</sprite>
       <sprite>sprites\spr_speedboost</sprite>
     </sprites>
+    <sprite>sprites\spr_quotebox</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -98,6 +106,43 @@
       <object>objects\obj_base</object>
       <object>objects\obj_statue</object>
     </objects>
+    <objects name="lvl4 - passcesmanloveletter">
+      <object>objects\obj_node_1</object>
+      <object>objects\obj_node_2</object>
+      <object>objects\obj_node_3</object>
+      <object>objects\obj_node_4</object>
+      <object>objects\obj_node_5</object>
+      <object>objects\obj_node_6</object>
+      <object>objects\obj_node_7</object>
+      <object>objects\obj_node_8</object>
+      <object>objects\obj_node_9</object>
+      <object>objects\obj_node_10</object>
+      <object>objects\obj_node_11</object>
+      <object>objects\obj_node_12</object>
+      <object>objects\obj_node_13</object>
+      <object>objects\obj_node_14</object>
+      <object>objects\obj_node_15</object>
+      <object>objects\obj_node_16</object>
+      <object>objects\obj_node_17</object>
+      <object>objects\obj_node_18</object>
+      <object>objects\obj_node_19</object>
+      <object>objects\obj_node_20</object>
+      <object>objects\obj_node_21</object>
+      <object>objects\obj_node_22</object>
+      <object>objects\obj_node_23</object>
+      <object>objects\obj_node_24</object>
+      <object>objects\obj_node_25</object>
+      <object>objects\obj_node_26</object>
+      <object>objects\obj_node_27</object>
+      <object>objects\obj_node_28</object>
+      <object>objects\obj_node_29</object>
+      <object>objects\obj_node_30</object>
+      <object>objects\obj_lecturer</object>
+      <object>objects\obj_desk</object>
+      <object>objects\obj_cesman</object>
+      <object>objects\obj_target</object>
+      <object>objects\obj_loveletter_cntrl</object>
+    </objects>
     <objects name="lvl6 - classphotodate">
       <object>objects\obj_sun</object>
       <object>objects\obj_rain</object>
@@ -133,6 +178,7 @@
     <room>rooms\rom_lvl_1</room>
     <room>rooms\rom_lvl_2</room>
     <room>rooms\rom_lvl_3</room>
+    <room>rooms\rom_lvl_4</room>
     <room>rooms\rom_lvl_6</room>
     <room>rooms\rom_lvl_10</room>
     <room>rooms\rom_lvl_14</room>
