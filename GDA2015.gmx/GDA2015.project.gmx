@@ -48,6 +48,14 @@
       <sprite>sprites\spr_playersigned</sprite>
       <sprite>sprites\spr_signedbox</sprite>
     </sprites>
+    <sprites name="lvl8 - attackdog">
+      <sprite>sprites\spr_dog</sprite>
+      <sprite>sprites\spr_badguy</sprite>
+      <sprite>sprites\spr_fence</sprite>
+      <sprite>sprites\spr_hole</sprite>
+      <sprite>sprites\spr_drop</sprite>
+      <sprite>sprites\spr_speedboost</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -107,6 +115,16 @@
       <object>objects\obj_otherpeoplebox</object>
       <object>objects\obj_playersigned</object>
       <object>objects\obj_avoiddpr_control</object>
+    </objects>
+    <objects name="lvl8 - attackdog">
+      <object>objects\par_runner</object>
+      <object>objects\obj_dog</object>
+      <object>objects\obj_badguy</object>
+      <object>objects\par_obstacle</object>
+      <object>objects\obj_hole</object>
+      <object>objects\obj_fence</object>
+      <object>objects\obj_drop</object>
+      <object>objects\obj_speedboost</object>
     </objects>
   </objects>
   <rooms name="rooms">
