@@ -9,6 +9,7 @@
       <sound>sound\snd_theherd</sound>
     </sounds>
     <sound>sound\snd_theme</sound>
+    <sound>sound\snd_alarm</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_lives</sprite>
@@ -56,6 +57,14 @@
       <sprite>sprites\spr_signedbox</sprite>
     </sprites>
     <sprite>sprites\spr_quotebox</sprite>
+    <sprites name="lvl 12 - tooearly">
+      <sprite>sprites\spr_alarmclock</sprite>
+      <sprite>sprites\spr_snooze</sprite>
+    </sprites>
+    <sprites name="lvl1 - grabnotes">
+      <sprite>sprites\spr_notes</sprite>
+      <sprite>sprites\spr_inventory</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -153,6 +162,14 @@
       <object>objects\obj_playersigned</object>
       <object>objects\obj_avoiddpr_control</object>
     </objects>
+    <objects name="lvl12 - tooearly">
+      <object>objects\obj_alarmclock</object>
+      <object>objects\obj_snooze</object>
+    </objects>
+    <objects name="lvl1 - grabnotes">
+      <object>objects\obj_notes</object>
+      <object>objects\obj_inventory</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rom_main_menu</room>
@@ -164,6 +181,7 @@
     <room>rooms\rom_lvl_6</room>
     <room>rooms\rom_lvl_10</room>
     <room>rooms\rom_lvl_14</room>
+    <room>rooms\rom_lvl_12</room>
   </rooms>
   <constants number="4">
     <constant name="c_levelcount">14</constant>
