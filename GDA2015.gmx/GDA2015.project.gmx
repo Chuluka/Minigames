@@ -31,10 +31,13 @@
     </sprites>
     <sprites name="lvl0 - #staywiththeherd">
       <sprite>sprites\spr_block</sprite>
-      <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_herd</sprite>
       <sprite>sprites\spr_ifrs</sprite>
       <sprite>sprites\spr_goal</sprite>
+      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_tree1</sprite>
+      <sprite>sprites\spr_sun1</sprite>
+      <sprite>sprites\spr_tree2</sprite>
     </sprites>
     <sprites name="lvl6 - classphotodate">
       <sprite>sprites\spr_sun</sprite>
@@ -102,6 +105,9 @@
       <object>objects\obj_ifrs</object>
       <object>objects\obj_goal</object>
       <object>objects\obj_herd</object>
+      <object>objects\obj_tree1</object>
+      <object>objects\obj_tree2</object>
+      <object>objects\obj_sun1</object>
     </objects>
     <objects name="lvl3 - rhodesmustfall">
       <object>objects\obj_base</object>
